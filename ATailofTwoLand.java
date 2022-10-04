@@ -16,7 +16,8 @@ public class ATailofTwoLand {
             }
         }
         Collections.sort(arr);
-        long count=0;
+        long count = 0;
+        // long count=0;
         for(int i=0;i<arr.size();i++){
             int temp=2*arr.get(i),l=i,r=arr.size()-1,ans=-1;
             while(l<=r){
