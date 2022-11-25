@@ -2,26 +2,16 @@ import java.util.*;
 import java.io.*;
 import java.awt.*;
 
-public class plusesandminus {
+public class fashion {
     public static void main(String[] args) throws Exception {
         InputReader sc = new InputReader(System.in);
         StringBuilder sb=new StringBuilder();
         int t=sc.nextInt();
         while(t-->0){
-            String s=sc.next();
-            long res=0;
-            int x=0;
-            for(int i=0;i<s.length();i++){
-                if(s.charAt(i)=='+')x++;
-                else x--;
-
-                if(x==-1){
-                    x=0;
-                    res+=(i+1);
-                }
-            }
-            sb.append((res+s.length())+"\n");
-        }fa
+            int n=sc.nextInt();
+            if(n%4==0) sb.append("YES\n");
+            else sb.append("NO\n");
+        }
         System.out.println(sb);
     }
 }
